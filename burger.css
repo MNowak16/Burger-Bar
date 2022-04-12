@@ -1,0 +1,36 @@
+header {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    background-color: yellow;
+    height: 50px;
+    padding-top: 10px;
+    border: 2px solid black;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* Defines the main grid that holds the 4 columns */
+div#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+}
+
+/* Styles the area where the burger is assembled */
+div#order {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Styles the images in the order div */
+div#order img {
+    margin-bottom: -50px;
+}
+
+/* Styles the headings and the category columns */
+h1, h2, div.category {
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
