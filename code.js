@@ -1,33 +1,37 @@
 //clicking on the images will toggle to add to order or remove from order
-$("div#grid").on("click", "img", addToOrder);
+$("div.category").on("click", "img", addToOrder);
 $("div#order").on("click", "img", removeFromOrder);
 
 function addToOrder(event) {
-    //get img name from clicked item
-    let orderImage = $(event.target);
-
-    // remove img from category column
-    $(event.target).remove();
+    //get img name from clicked item & remove from category
+    let orderImage = $(event.target).remove();
+    let orderID = $(event.target).attr('id');
+    let orderCat = $(event.target).attr('data-category');
 
     //append img to order column
-    $("div#order").append(orderImage);
-
-    //make sure that bottom-bun is the bottom image & top-bun is the top image
+    //make sure that images are odered to resemble a burger
+    if (orderID == "bottom-bun") {
+        $("p#bottom").append(orderImage);
+    }
+    else if (orderID == "patty") {
+        $("p#patty").append(orderImage);
+    }
+    else if (orderID == "top-bun") {
+        $("p#top").append(orderImage);
+    }
+    else if (orderCat == "#extras") {
+        $("p#extras").append(orderImage);
+    }
+    else if (orderCat == "#condiments") {
+        $("p#condiments").append(orderImage);
+    }
 }
 
 function removeFromOrder(event) {
-    //select item that was clicked
-
-    //remove from order
+    //select item that was clicked & remove from order
+    let removeImage = $(event.target).remove();
+    let removeID = $(event.target).attr('id');
+    let removeCat = $(event.target).attr('data-category');
 
     //add back to original category
 }
-
-// // set the image's src attribute
-// cardImage.attr("src", `card-images/${randomNumber}.png`);
-//
-// // set the image's alt attribute
-// cardImage.attr("alt", "playing card");
-//
-// // Add the new card as the last child of the play area
-// $("#play-area").append(cardImage);
