@@ -11,9 +11,9 @@
     <div id="grid">
         <div class="category" id="basics">
             <h2>Basics</h2>
-                <img src="top-bun.png" height="114" width="200" alt="Top Bun" data-category="#basics"/>
-                <img src="patty.png" height="91" width="200" alt="Patty" data-category="#basics"/>
-                <img src="bottom-bun.png" height="98" width="200" alt="Bottom Bun" data-category="#basics"/>
+                <img src="top-bun.png" id="top-bun" height="114" width="200" alt="Top Bun" data-category="#basics"/>
+                <img src="patty.png" id="patty" height="91" width="200" alt="Patty" data-category="#basics"/>
+                <img src="bottom-bun.png" id="bottom-bun" height="98" width="200" alt="Bottom Bun" data-category="#basics"/>
         </div>
         <div class="category" id="extras">
             <h2>Extras</h2>
@@ -33,6 +33,11 @@
         <div>
             <h2>Your Order</h2>
             <div id="order"></div>
+                <!--assures that items can be added in a specific order such as bun on
+                bottom and above with bun on top-->
+                <p id="bottom"></p>
+                <p id="middle"></p>
+                <p id="top"></p>
         </div>
     </div>
 
