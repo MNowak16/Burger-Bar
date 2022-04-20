@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8ec5a19-9cb9-4ec6-814a-1222702c3802" name="Changes" comment="images move to order">
+    <list default="true" id="a8ec5a19-9cb9-4ec6-814a-1222702c3802" name="Changes" comment="orders images to resemble a burger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/burger.css" beforeDir="false" afterPath="$PROJECT_DIR$/burger.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/code.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -66,7 +67,22 @@
       <workItem from="1649891911168" duration="1250000" />
       <workItem from="1649893239198" duration="638000" />
       <workItem from="1649893905034" duration="243000" />
-      <workItem from="1649894173432" duration="1731000" />
+      <workItem from="1649894173432" duration="2443000" />
+      <workItem from="1649896691664" duration="272000" />
+      <workItem from="1649896987854" duration="9000" />
+      <workItem from="1650215867614" duration="66000" />
+      <workItem from="1650216670982" duration="13000" />
+      <workItem from="1650217029463" duration="206000" />
+      <workItem from="1650322652492" duration="526000" />
+      <workItem from="1650323900017" duration="50000" />
+      <workItem from="1650324376258" duration="131000" />
+      <workItem from="1650324541306" duration="163000" />
+      <workItem from="1650324758428" duration="6000" />
+      <workItem from="1650324774855" duration="54000" />
+      <workItem from="1650324843983" duration="91000" />
+      <workItem from="1650326928487" duration="666000" />
+      <workItem from="1650490613890" duration="678000" />
+      <workItem from="1650491394434" duration="1168000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Load">
       <created>1649725951434</created>
@@ -89,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649894422815</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="orders images to resemble a burger">
+      <created>1649896048742</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649896048742</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +133,7 @@
     <MESSAGE value="Initial Load" />
     <MESSAGE value="html formatting for proper column alignment" />
     <MESSAGE value="images move to order" />
-    <option name="LAST_COMMIT_MESSAGE" value="images move to order" />
+    <MESSAGE value="orders images to resemble a burger" />
+    <option name="LAST_COMMIT_MESSAGE" value="orders images to resemble a burger" />
   </component>
 </project>

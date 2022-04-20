@@ -1,37 +1,29 @@
 //clicking on the images will toggle to add to order or remove from order
 $("div.category").on("click", "img", addToOrder);
 $("div#order").on("click", "img", removeFromOrder);
+$("button#restart").on("click", restartOrder);
 
 function addToOrder(event) {
     //get img name from clicked item & remove from category
     let orderImage = $(event.target).remove();
-    let orderID = $(event.target).attr('id');
-    let orderCat = $(event.target).attr('data-category');
-
     //append img to order column
-    //make sure that images are odered to resemble a burger
-    if (orderID == "bottom-bun") {
-        $("p#bottom").append(orderImage);
-    }
-    else if (orderID == "patty") {
-        $("p#patty").append(orderImage);
-    }
-    else if (orderID == "top-bun") {
-        $("p#top").append(orderImage);
-    }
-    else if (orderCat == "#extras") {
-        $("p#extras").append(orderImage);
-    }
-    else if (orderCat == "#condiments") {
-        $("p#condiments").append(orderImage);
-    }
+    $("div#order").append(orderImage);
 }
 
 function removeFromOrder(event) {
     //select item that was clicked & remove from order
     let removeImage = $(event.target).remove();
-    let removeID = $(event.target).attr('id');
+    //retrieve data category of clicked item to move back to that category
     let removeCat = $(event.target).attr('data-category');
-
     //add back to original category
+    $(`div${removeCat}`).append(removeImage);
+}
+
+function restartOrder() {
+    //loop thru each element to move back to original category
+    $("img").each(function(index, element) {
+        let removeImage = $(element).remove();
+        let removeCat = $(element).attr('data-category');
+        $(`div${removeCat}`).append(removeImage);
+    })
 }

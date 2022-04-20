@@ -9,6 +9,11 @@ header {
     font-family: Verdana, Tahoma, sans-serif;
 }
 
+span#restartButton {
+    display: table;
+    margin: 0 auto;
+}
+
 /* Defines the main grid that holds the 4 columns */
 div#grid {
     display: grid;
